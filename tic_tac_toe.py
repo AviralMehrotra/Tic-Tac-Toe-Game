@@ -24,7 +24,7 @@ def userTurn():
         grid[rowIndex-1][columnIndex-1]= "❌"
         boxFilled(rowIndex-1, columnIndex-1)
         checkIfWon(player)
-        ifDraw()
+        
     else:
         print("\nEnter the coordinates which are not filled yet")
         userTurn()
@@ -40,7 +40,6 @@ def computerTurn():
         grid[compRowIndex-1][compColumnIndex-1]= "⭕"
         boxFilled(compRowIndex-1, compColumnIndex-1)
         checkIfWon(player)
-        ifDraw()
     else:
         computerTurn()
     
@@ -110,7 +109,7 @@ def printTTT(grid):
     print("\n")
 
 def ifDraw():
-    if check_grid[0,0]==check_grid[0,1]==check_grid[0,2]==check_grid[1,0]==check_grid[1,1]==check_grid[1,2]==check_grid[2,0]==check_grid[2,1]==check_grid[2,2]==1:
+    if check_grid[0,0]==check_grid[0,1]==check_grid[0,2]==check_grid[1,0]==check_grid[1,1]==check_grid[1,2]==check_grid[2,0]==check_grid[2,1]==check_grid[2,2]=="1":
         print("\t Its a draw ! ")
         exit()
     
@@ -124,6 +123,7 @@ printTTT(grid)
 while True:
     print("\nYour Turn !")
     userTurn()
+    ifDraw()
     print("\nComputer's Turn !")
     computerTurn()
 
