@@ -58,37 +58,37 @@ def ifFilled(rowIndex, columnIndex):
 def checkIfWon(player):
     #horizontal ways
     if grid[0,0]==grid[0,1]==grid[0,2]=="❌" or grid[0,0]==grid[0,1]==grid[0,2]=="⭕":
-        print(f"{player} Wins")
+        print(f"{player} Wins\n")
         printTTT(grid)
         exit()
     elif grid[1,0]==grid[1,1]==grid[1,2]=="❌" or grid[1,0]==grid[1,1]==grid[1,2]=="⭕":
-        print(f"{player} Wins")
+        print(f"{player} Wins\n")
         printTTT(grid)
         exit()
     elif grid[2,0]==grid[2,1]==grid[2,2]=="❌" or grid[2,0]==grid[2,1]==grid[2,2]=="⭕":
-        print(f"{player} Wins")
+        print(f"{player} Wins\n")
         printTTT(grid)
         exit()
     #vertical ways
     elif grid[0,0]==grid[1,0]==grid[2,0]=="❌" or grid[0,0]==grid[1,0]==grid[2,0]=="⭕":
-        print(f"{player} Wins")
+        print(f"{player} Wins\n")
         printTTT(grid)
         exit()
     elif grid[0,1]==grid[1,1]==grid[2,1]=="❌" or grid[0,1]==grid[1,1]==grid[2,1]=="⭕":
-        print(f"{player} Wins")
+        print(f"{player} Wins\n")
         printTTT(grid)
         exit()
     elif grid[0,2]==grid[1,2]==grid[2,2]=="❌" or grid[0,2]==grid[1,2]==grid[2,2]=="⭕":
-        print(f"{player} Wins")
+        print(f"{player} Wins\n")
         printTTT(grid)
         exit()
     #diagonal ways
     elif grid[0,0]==grid[1,1]==grid[2,2]=="❌" or grid[0,0]==grid[1,1]==grid[2,2]=="⭕":
-        print(f"{player} Wins")
+        print(f"{player} Wins\n")
         printTTT(grid)
         exit()
     elif grid[0,2]==grid[1,1]==grid[2,0]=="❌" or grid[0,2]==grid[1,1]==grid[2,0]=="⭕":
-        print(f"{player} Wins")
+        print(f"{player} Wins\n")
         printTTT(grid)
         exit()
 
